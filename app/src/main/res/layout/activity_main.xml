@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EABF92"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ad"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Isım giriniz.."
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Soyad"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextsoyad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Soyisim giriniz.."
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Numara"
+                    android:textColor="#020202" />
+
+                <EditText
+                    android:id="@+id/editTextnumara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Numara giriniz.."
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Adres"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/editTextsehir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Adres giriniz.."
+                    android:inputType="textPersonName" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonkayit"
+                    android:layout_width="198dp"
+                    android:layout_height="match_parent"
+                    android:background="#59473D"
+                    android:text="kişiyi ekle"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/buttongoster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#59473D"
+                    android:text="adres defteri"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonsil"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:background="#59473D"
+                    android:text="kişiyi sil"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/buttonguncelle"
+                    android:layout_width="221dp"
+                    android:layout_height="match_parent"
+                    android:background="#59473D"
+                    android:text="kişiyi güncelle"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textViewbilgiler"
+            android:layout_width="match_parent"
+            android:layout_height="314dp"
+            android:background="#EDDACC"
+            android:hint="Kişi Listesi"
+            android:scrollbars="vertical"
+            android:textColor="#1C1919" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
